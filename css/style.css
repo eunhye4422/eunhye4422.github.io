@@ -1,1 +1,13 @@
 .box {width: 100px; height : 100px; background-color : firebrick; }
+
+
+* {margin : 0; padding : 0}
+li {list-style: none;}
+a {text-decoration: none;}
+
+header {background : #000; height: 75px; padding : 0 30px; background-position: fixed;}
+header h1 {color :#fff; float : left; line-height: 75px; margin-right : 10px;}
+header .category {}
+header .category li {float : left; line-height : 40px;  }
+header .category li a {color : white; display: block; height : 40px; margin : 17.5px 10px; font-weight: bold}
+header .category li a:hover {background-color : yellowgreen}
