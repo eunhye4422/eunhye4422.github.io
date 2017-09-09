@@ -1,13 +1,42 @@
-.box {width: 100px; height : 100px; background-color : firebrick; }
+/*.box {width: 100px; height : 100px; background-color : firebrick; }*/
 
 
 * {margin : 0; padding : 0}
 li {list-style: none;}
 a {text-decoration: none;}
 
-header {background : #000; height: 75px; padding : 0 30px; background-position: fixed;}
+
+/*header*/
+body {color :#222; }
+.clearfix::after{content:''; display: block; clear: both; height:0}
+
+
+header {background-color : #161b1e; height: 74px;}
+header h1 {width : 200px; height : 74px; float : left; line-height: 74px; text-align: center; color :#fff; letter-spacing: 5px; font-weight:normal;}
+header .category {height :36px; margin : 19px 0; float ; left; float : left}
+header .category > li {float : left; height: 36px; position :relative; }
+header .category > li > a {display: block; padding : 0 20px; height : 36px; line-height: 36px; color: #fff; }
+header .category > li:hover > a {background-color:#96da47 }
+
+/*
+header {background-color : #161b1e; height: 74px; padding : 0 30px; background-position: fixed;}
 header h1 {color :#fff; float : left; line-height: 75px; margin-right : 10px;}
 header .category {}
-header .category li {float : left; line-height : 40px;  }
-header .category li a {color : white; display: block; height : 40px; margin : 17.5px 10px; font-weight: bold}
-header .category li a:hover {background-color : yellowgreen}
+header .category li {float : left;  }
+header .category li a {
+    color : #fff; display: block; height : 40px; margin : 17.5px 10px; 
+    font-weight: bold; line-height : 40px; }
+header .category li a:hover {background-color : yellowgreen;}
+
+*/
+
+
+
+.sub {background-color:#282d30; padding : 20px; position :absolute; top : 100%; left: 0; width : 500px; border-top :1px solid #96da47  ;}
+.sub .submenu {float : left;width :25%; }
+.sub .submenu li {}
+.sub .submenu li a {color : #b3b3b3; display: block; height : 28px; line-height: 28px; font-size : 14px; }
+.submenu li > a:hover {color :#96da47} /*li에 호버주면 마우스가 나갔을 대 안꺼진다. */
+.sub .submenu li.subtitle {color : #fff; font-size : 15px; margin-bottom : 10px;  }
+
+
