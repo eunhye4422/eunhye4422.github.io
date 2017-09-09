@@ -17,6 +17,7 @@ header .category {height :36px; margin : 19px 0; float ; left; float : left}
 header .category > li {float : left; height: 36px; position :relative; }
 header .category > li > a {display: block; padding : 0 20px; height : 36px; line-height: 36px; color: #fff; }
 header .category > li:hover > a {background-color:#96da47 }
+header .category > li:hover .sub {display: block;}
 
 /*
 header {background-color : #161b1e; height: 74px; padding : 0 30px; background-position: fixed;}
@@ -32,7 +33,7 @@ header .category li a:hover {background-color : yellowgreen;}
 
 
 
-.sub {background-color:#282d30; padding : 20px; position :absolute; top : 100%; left: 0; width : 500px; border-top :1px solid #96da47  ;}
+.sub {background-color:#282d30; padding : 20px; position :absolute; top : 100%; left: 0; width : 500px; border-top :1px solid #96da47  ;display: none;}
 .sub .submenu {float : left;width :25%; }
 .sub .submenu li {}
 .sub .submenu li a {color : #b3b3b3; display: block; height : 28px; line-height: 28px; font-size : 14px; }
