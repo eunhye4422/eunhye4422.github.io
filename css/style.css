@@ -111,9 +111,9 @@ header .category li a:hover {background-color : yellowgreen;}
 .block_list li.cart {width : calc(100% - 88px);}
 
 /*기능을 만들어보자.*/
-.view_inner .image {overflow : hidden; }
+.swiper-slide .image {overflow : hidden; }
 .block {transform : translateY(46px); transition : all .5s ease; }
-.view_inner:hover .block { transform : translateY(0px);}
+.swiper-slide:hover .block { transform : translateY(0px);}
 
 .thumnails {perspective: 500px; }
 .motion {
