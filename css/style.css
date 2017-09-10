@@ -55,4 +55,107 @@ header .category li a:hover {background-color : yellowgreen;}
 
 /*owl jQuery 이용 */
 
-.owl-carousel {width : 100%; }
+/*.owl-carousel {width : 100%; }*/
+
+
+/*section deal*/
+
+#dealSection{padding : 40px 0;background-color : #96da47; }
+.deal {height : 46px;text-align: center; line-height: 46px;}
+.deal > div {display: inline-block;vertical-align: middle; }
+/*vertical -aline : inline 계열에만 적용된다. 가운데를 기준으로 들어온다. */
+.deal .deal_title {color : #fff; font-family: impact; font-size : 35px; }
+.deal .dash {width : 40px; height : 1px; background-color : #000; margin : 0 10px;  }
+.deal .deal_desc {font-size : 28px }
+.deal .deal_btn {width : 140px; background-color : #fff; color : #222; font-weight: bold; margin-left : 20px; font-size : 12px; cursor : pointer; position : relative; 
+}
+
+.deal_btn::after {
+    content:'VIEW ALL OFFERS'; /*가상선택자 필수 속성*/ display: block; 
+    position : absolute; top : 0; left : 0; right :0; bottom : 0; background : #222; color : #fff; 
+/*    z-index: -1; */
+    transform : scaleY(0); 
+    transform-origin: bottom;
+    transition : all .4s ease; 
+}
+
+.deal_btn:hover::after{
+    transform :scaleY(1);
+}
+
+
+
+
+
+/*sefction product*/
+
+#productView {padding-top : 80px; }
+.product_title {text-align: center; font-family: impact; font-size : 30px; }
+.under_line {margin : 20px auto 30px; width : 30px; height : 1px;  background-color : #ccc;  }
+
+#productView {padding: 80px 0; width : 1200px; margin : 0 auto;}
+
+.view_item {width :25%; float : left; }
+.view_inner { margin : 0 15px; }
+.view_inner .dp , .view_inner .motion {width : 100%;}
+.thumnails {position  : relative}
+.thumnails img {display: block;} /*아래 공백을 없애기 위해 */
+.thumnails .motion {
+    position : absolute; top :0; left : 0; transform : scaleX(0) scale(0.7); transition : all .4s ease; 
+}
+
+.image {position :relative; overflow: hidden}
+.block {position: absolute; bottom :0; width : 100%; padding : 3px 2px; box-sizing: border-box;  }
+.block_list {}
+.block_list li {width : 40px; height : 40px; float : left; background : #fff; margin : 0 1px; line-height: 40px; text-align: center; }
+.block_list li.cart {width : calc(100% - 88px);}
+
+/*기능을 만들어보자.*/
+.view_inner .image {overflow : hidden; }
+.block {transform : translateY(46px); transition : all .5s ease; }
+.view_inner:hover .block { transform : translateY(0px);}
+
+.thumnails {perspective: 500px; }
+.motion {
+    transform : rotateY(90deg) scale(0.8); 
+    transition : all .5s ease; } /*왜안됌 */
+.thumnails:hover .motion {transform : rotateY(0) scale(1);}
+
+/*
+.product_view .view_item:hover .block {bottom : 0;} 
+.product_view .image:hover .motion {transform : scaleX(1) scale(1)}
+.product_view .block_list li:hover {color :#96da47}
+*/
+
+
+
+/*
+
+.product_view .product {
+    width : calc(25%-10px); margin : 10px; float : left;}
+
+
+
+.product_view .product .product_img {height : 400px; position :relative; }
+.product_view .product .cover_img {transform :scaleX(0);}
+
+
+.product_img .eye {
+    width : 35px; height : 35px;background-color: #96da47;
+    margin : 5px; border-radius: 50%; position : absolute; top : 0; right : 0; 
+}
+.product_img .bot_opt {overflow: hidden; position : absolute; bottom  : 0; left :0; padding : 2px;  }
+.product_img .bot_opt > div {height : 50px; width : 50px; background: #fff; margin : 2px; float : left;  }
+.product_img .bot_opt > div.cart {width : 164px; }
+
+
+
+
+
+.product_view .product_img.a {background-image: url(../images/5-280x400.jpg)}
+.product_view .product_img.b {background-image: url(../images/6-280x400.jpg)}
+.product_view .product_img.c {background-image: url(../images/9-280x400.jpg)}
+.product_view .product_img.d {background-image: url(../images/8-280x400.jpg)}
+*/
+
+
